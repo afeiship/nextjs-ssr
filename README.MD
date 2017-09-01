@@ -4,5 +4,6 @@
 
 ## resouces:
 + https://github.com/zeit/next.js
++ https://learnnextjs.com/basics/using-shared-components/using-the-header-component
 
 
