@@ -2,4 +2,7 @@
 > React ssr solution nextjs.
 
 
-## reouter:
+## resouces:
++ https://github.com/zeit/next.js
+
+
