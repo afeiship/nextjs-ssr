@@ -2,9 +2,23 @@ import MyLayout from '../components/my-layout';
 import PostLink from '../components/post-link';
 import fetch from 'isomorphic-unfetch';
 import Link from 'next/link';
+import Head from 'next/head';
+
+import styles from  'styles/style.scss';
+
+console.log(styles);
 
 const Index = (props) => (
   <MyLayout>
+    <Head>
+      <title>This page has a title 🤔</title>
+      <meta charSet='utf-8'/>
+      <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href={`/static/styles/app.css?${props.__NEXT_DATA__}`}/>
+    </Head>
     <h1>Batman TV Shows</h1>
     <ul>
       {props.shows.map(({show}) => (
